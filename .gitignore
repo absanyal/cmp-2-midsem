@@ -1,6 +1,6 @@
 *
-!.gitignore
+!*.md
 !*.py
 !*.f90
 !*.f95
-!README.md
+!.gitignore

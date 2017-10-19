@@ -13,8 +13,8 @@ MODULE constants
 
   !physical properties
   REAL(8), PARAMETER :: mass = 1.0, hbar = 1.0
-  REAL(8) :: omega = 1.0
-  REAL(8) :: width = 1
+  REAL(8) :: omega = 1.0 ! for harmonic Potential
+  REAL(8) :: width = 1 !width of the well
 
 CONTAINS
 
