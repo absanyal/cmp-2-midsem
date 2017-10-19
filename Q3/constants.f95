@@ -8,7 +8,7 @@ MODULE constants
   INTEGER, ALLOCATABLE::iwork(:)
   REAL(8), ALLOCATABLE:: work(:)
   REAL(8), ALLOCATABLE :: h(:,:), e(:), v(:), x(:), &
-       rho(:),rhohf(:,:),vhf(:),vhff(:)
+       rho(:),rhohf(:,:),vhf(:)
   INTEGER :: lwork,info,liwork
 
   !physical properties
@@ -27,8 +27,7 @@ CONTAINS
          work(1 + 6 * size + 2 * size**2),&
          e(0:no_grid), h(0:no_grid, 0:no_grid), iwork(3 + 5 * size), &
          v(0:no_grid), x(0:no_grid), rho(0:no_grid), &
-         rhohf(0:no_grid, 0:no_grid), &
-         vhf(0:no_grid), vhff(0:no_grid) &
+         rhohf(0:no_grid, 0:no_grid), vhf(0:no_grid) &
          )
   END SUBROUTINE assign_values
 
